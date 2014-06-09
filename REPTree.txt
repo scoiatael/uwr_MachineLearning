@@ -1,0 +1,103 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1
+Relation:     data_banknote_authentication.txt-weka.filters.unsupervised.attribute.Discretize-unset-class-temporarily-B10-M-1.0-Rfirst-last-weka.filters.unsupervised.attribute.Remove-R3-4
+Instances:    1371
+Attributes:   3
+              variance
+              skewness
+              genuine?
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+variance = '(-inf--5.65541]' : '(0.9-inf)' (10/0) [11/0]
+variance = '(-5.65541--4.26872]' : '(0.9-inf)' (27/1) [14/0]
+variance = '(-4.26872--2.88203]' : '(0.9-inf)' (76/0) [36/0]
+variance = '(-2.88203--1.49534]'
+|   skewness = '(-inf--11.10063]' : '(0.9-inf)' (0/0) [1/0]
+|   skewness = '(-11.10063--8.42816]' : '(0.9-inf)' (21/0) [6/0]
+|   skewness = '(-8.42816--5.75569]' : '(0.9-inf)' (28/0) [17/0]
+|   skewness = '(-5.75569--3.08322]' : '(0.9-inf)' (6/0) [5/0]
+|   skewness = '(-3.08322--0.41075]' : '(0.9-inf)' (19/0) [3/0]
+|   skewness = '(-0.41075-2.26172]' : '(0.9-inf)' (25/4) [24/3]
+|   skewness = '(2.26172-4.93419]' : '(0.9-inf)' (23/0) [7/0]
+|   skewness = '(4.93419-7.60666]' : '(0.9-inf)' (0/0) [0/0]
+|   skewness = '(7.60666-10.27913]' : '(-inf-0.1]' (0/0) [6/0]
+|   skewness = '(10.27913-inf)' : '(-inf-0.1]' (22/0) [7/0]
+variance = '(-1.49534--0.10865]'
+|   skewness = '(-inf--11.10063]' : '(0.9-inf)' (0/0) [0/0]
+|   skewness = '(-11.10063--8.42816]' : '(0.9-inf)' (2/0) [1/0]
+|   skewness = '(-8.42816--5.75569]' : '(0.9-inf)' (12/1) [3/0]
+|   skewness = '(-5.75569--3.08322]' : '(0.9-inf)' (12/0) [4/1]
+|   skewness = '(-3.08322--0.41075]' : '(0.9-inf)' (26/2) [8/3]
+|   skewness = '(-0.41075-2.26172]' : '(0.9-inf)' (35/4) [14/4]
+|   skewness = '(2.26172-4.93419]' : '(0.9-inf)' (23/0) [20/1]
+|   skewness = '(4.93419-7.60666]' : '(-inf-0.1]' (2/0) [2/0]
+|   skewness = '(7.60666-10.27913]' : '(-inf-0.1]' (21/0) [6/0]
+|   skewness = '(10.27913-inf)' : '(-inf-0.1]' (5/0) [4/0]
+variance = '(-0.10865-1.27804]'
+|   skewness = '(-inf--11.10063]' : '(-inf-0.1]' (0/0) [0/0]
+|   skewness = '(-11.10063--8.42816]' : '(-inf-0.1]' (0/0) [0/0]
+|   skewness = '(-8.42816--5.75569]' : '(-inf-0.1]' (1/0) [0/0]
+|   skewness = '(-5.75569--3.08322]' : '(-inf-0.1]' (12/5) [8/0]
+|   skewness = '(-3.08322--0.41075]' : '(0.9-inf)' (9/5) [6/2]
+|   skewness = '(-0.41075-2.26172]' : '(0.9-inf)' (32/12) [24/7]
+|   skewness = '(2.26172-4.93419]' : '(0.9-inf)' (34/10) [18/3]
+|   skewness = '(4.93419-7.60666]' : '(-inf-0.1]' (26/3) [11/0]
+|   skewness = '(7.60666-10.27913]' : '(-inf-0.1]' (20/0) [23/0]
+|   skewness = '(10.27913-inf)' : '(-inf-0.1]' (5/0) [1/0]
+variance = '(1.27804-2.66473]' : '(-inf-0.1]' (135/17) [48/6]
+variance = '(2.66473-4.05142]' : '(-inf-0.1]' (144/0) [69/0]
+variance = '(4.05142-5.43811]' : '(-inf-0.1]' (91/0) [40/0]
+variance = '(5.43811-inf)' : '(-inf-0.1]' (10/0) [10/0]
+
+Size of the tree : 41
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1271               92.7061 %
+Incorrectly Classified Instances       100                7.2939 %
+Kappa statistic                          0.853 
+Mean absolute error                      0.0221
+Root mean squared error                  0.1063
+Relative absolute error                 22.2001 %
+Root relative squared error             47.8321 %
+Total Number of Instances             1371     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.917     0.061      0.95      0.917     0.933      0.973    '(-inf-0.1]'
+                 0         0          0         0         0          ?        '(0.1-0.2]'
+                 0         0          0         0         0          ?        '(0.2-0.3]'
+                 0         0          0         0         0          ?        '(0.3-0.4]'
+                 0         0          0         0         0          ?        '(0.4-0.5]'
+                 0         0          0         0         0          ?        '(0.5-0.6]'
+                 0         0          0         0         0          ?        '(0.6-0.7]'
+                 0         0          0         0         0          ?        '(0.7-0.8]'
+                 0         0          0         0         0          ?        '(0.8-0.9]'
+                 0.939     0.083      0.901     0.939     0.92       0.973    '(0.9-inf)'
+Weighted Avg.    0.927     0.071      0.928     0.927     0.927      0.973
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 698   0   0   0   0   0   0   0   0  63 |   a = '(-inf-0.1]'
+   0   0   0   0   0   0   0   0   0   0 |   b = '(0.1-0.2]'
+   0   0   0   0   0   0   0   0   0   0 |   c = '(0.2-0.3]'
+   0   0   0   0   0   0   0   0   0   0 |   d = '(0.3-0.4]'
+   0   0   0   0   0   0   0   0   0   0 |   e = '(0.4-0.5]'
+   0   0   0   0   0   0   0   0   0   0 |   f = '(0.5-0.6]'
+   0   0   0   0   0   0   0   0   0   0 |   g = '(0.6-0.7]'
+   0   0   0   0   0   0   0   0   0   0 |   h = '(0.7-0.8]'
+   0   0   0   0   0   0   0   0   0   0 |   i = '(0.8-0.9]'
+  37   0   0   0   0   0   0   0   0 573 |   j = '(0.9-inf)'
+
